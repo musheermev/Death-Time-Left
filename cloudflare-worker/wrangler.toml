@@ -1,0 +1,9 @@
+name = "dtl-ai-proxy"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "fb2953861cb74fbe98753c6348642cbc"
+
+[vars]

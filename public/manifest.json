@@ -1,0 +1,40 @@
+{
+  "name": "Death Time Left",
+  "short_name": "DeathTimeleft",
+  "description": "Calculate your exact life expectancy with AI-powered analysis. Life in weeks calendar, brain age tests, death date predictor. Free, no login.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06080D",
+  "theme_color": "#C0392B",
+  "orientation": "portrait-primary",
+  "categories": ["lifestyle", "health", "utilities"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Calculate My Life",
+      "url": "/",
+      "description": "Start life expectancy calculator"
+    },
+    {
+      "name": "India Life Expectancy",
+      "url": "/life-expectancy/india",
+      "description": "India life expectancy data 2026"
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

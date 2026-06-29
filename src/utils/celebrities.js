@@ -1,0 +1,18 @@
+export const CELEBRITIES = [
+  { name: 'Tupac Shakur', diedAge: 25, field: 'Music' },
+  { name: 'Heath Ledger', diedAge: 28, field: 'Film' },
+  { name: 'Kurt Cobain', diedAge: 27, field: 'Music' },
+  { name: 'Amy Winehouse', diedAge: 27, field: 'Music' },
+  { name: 'Bruce Lee', diedAge: 32, field: 'Martial Arts' },
+  { name: 'Nikola Tesla', diedAge: 86, field: 'Science' },
+  { name: 'Albert Einstein', diedAge: 76, field: 'Science' },
+  { name: 'Stephen Hawking', diedAge: 76, field: 'Science' },
+  { name: 'Leonardo da Vinci', diedAge: 67, field: 'Art' },
+  { name: 'Freddie Mercury', diedAge: 45, field: 'Music' },
+  { name: 'Nelson Mandela', diedAge: 95, field: 'Politics' },
+  { name: 'Muhammad Ali', diedAge: 74, field: 'Sports' },
+  { name: 'Steve Jobs', diedAge: 56, field: 'Tech' },
+  { name: 'Alan Turing', diedAge: 41, field: 'Science' },
+  { name: 'Whitney Houston', diedAge: 48, field: 'Music' },
+  { name: 'Michael Jackson', diedAge: 50, field: 'Music' },
+]
