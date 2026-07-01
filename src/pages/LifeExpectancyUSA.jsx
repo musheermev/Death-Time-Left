@@ -143,14 +143,14 @@ export default function LifeExpectancyUSA() {
         <meta name="keywords" content="life expectancy USA, US life expectancy 2026, life expectancy by state USA, why is US life expectancy lower than other countries, CDC life expectancy 2024, opioid crisis life expectancy, US life expectancy ranking, life expectancy men vs women USA, Hawaii life expectancy, West Virginia life expectancy, US vs G7 life expectancy" />
         <meta property="og:title" content="Life Expectancy in the USA 2026 — CDC Record High, State Rankings & G7 Gap" />
         <meta property="og:description" content="US life expectancy hit a record 79.0 years in 2024. See state-by-state data, the opioid crisis recovery, and how the US compares to Japan, France, and other G7 nations." />
-        <meta property="og:url" content="https://deathtimeleft.com/life-expectancy/usa" />
+        <meta property="og:url" content="https://www.deathtimeleft.com/life-expectancy/usa" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://deathtimeleft.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.deathtimeleft.com/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://deathtimeleft.com/og-image.jpg" />
-        <link rel="canonical" href="https://deathtimeleft.com/life-expectancy/usa" />
+        <meta name="twitter:image" content="https://www.deathtimeleft.com/og-image.jpg" />
+        <link rel="canonical" href="https://www.deathtimeleft.com/life-expectancy/usa" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>

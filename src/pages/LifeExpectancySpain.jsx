@@ -141,14 +141,14 @@ export default function LifeExpectancySpain() {
         <meta name="keywords" content="spain life expectancy 2026, why do spanish people live so long, mediterranean diet life expectancy, spain life expectancy ranking, spain life expectancy vs usa, spain healthcare system longevity, PREDIMED study olive oil, spain life expectancy male female, spain EU life expectancy ranking, why is spain so healthy" />
         <meta property="og:title" content="Spain Life Expectancy 2026 — Why Spanish People Live So Long" />
         <meta property="og:description" content="Spain's life expectancy reached 84.01 years in 2024, highest in the EU. See the diet, lifestyle, and healthcare factors behind Spain's longevity ranking." />
-        <meta property="og:url" content="https://deathtimeleft.com/life-expectancy/spain" />
+        <meta property="og:url" content="https://www.deathtimeleft.com/life-expectancy/spain" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://deathtimeleft.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.deathtimeleft.com/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://deathtimeleft.com/og-image.jpg" />
-        <link rel="canonical" href="https://deathtimeleft.com/life-expectancy/spain" />
+        <meta name="twitter:image" content="https://www.deathtimeleft.com/og-image.jpg" />
+        <link rel="canonical" href="https://www.deathtimeleft.com/life-expectancy/spain" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>

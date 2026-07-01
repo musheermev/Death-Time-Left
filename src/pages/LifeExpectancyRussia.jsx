@@ -133,14 +133,14 @@ export default function LifeExpectancyRussia() {
         <meta name="keywords" content="russia life expectancy 2026, russia life expectancy gender gap, why do russian men die young, russia male life expectancy, russia alcohol mortality, russia life expectancy vs usa, rosstat data 2025, russia healthy life expectancy, soviet life expectancy history, russia cardiovascular mortality" />
         <meta property="og:title" content="Russia Life Expectancy 2026 — Gender Gap, Causes & Current Data" />
         <meta property="og:description" content="Russia's combined life expectancy is approximately 72–73 years in 2026, hiding a 10-year gap between men and women. Find out why — and what the data blackout means." />
-        <meta property="og:url" content="https://deathtimeleft.com/life-expectancy/russia" />
+        <meta property="og:url" content="https://www.deathtimeleft.com/life-expectancy/russia" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://deathtimeleft.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.deathtimeleft.com/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://deathtimeleft.com/og-image.jpg" />
-        <link rel="canonical" href="https://deathtimeleft.com/life-expectancy/russia" />
+        <meta name="twitter:image" content="https://www.deathtimeleft.com/og-image.jpg" />
+        <link rel="canonical" href="https://www.deathtimeleft.com/life-expectancy/russia" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
