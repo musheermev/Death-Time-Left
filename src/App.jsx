@@ -7,6 +7,10 @@ const LifeExpectancyUSA = lazy(() => import('./pages/LifeExpectancyUSA'))
 const LifeExpectancyRussia = lazy(() => import('./pages/LifeExpectancyRussia'))
 const LifeExpectancySpain = lazy(() => import('./pages/LifeExpectancySpain'))
 const NotFound = lazy(() => import('./pages/NotFound'))
+const AboutUs = lazy(() => import('./pages/AboutUs'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
+const TermsOfService = lazy(() => import('./pages/TermsOfService'))
+const DMCA = lazy(() => import('./pages/DMCA'))
 import { applyDocumentDirection } from './utils/i18n'
 
 export default function App() {
@@ -25,6 +29,10 @@ export default function App() {
             <Route path="/life-expectancy/usa" element={<LifeExpectancyUSA />} />
             <Route path="/life-expectancy/russia" element={<LifeExpectancyRussia />} />
             <Route path="/life-expectancy/spain" element={<LifeExpectancySpain />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/dmca" element={<DMCA />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

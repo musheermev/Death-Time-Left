@@ -57,7 +57,7 @@ export default function Footer() {
         margin: '0 auto',
         padding: '0 24px',
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr',
+        gridTemplateColumns: '1fr 1fr 1fr 1fr',
         gap: '48px',
       }} className="dtl-footer-grid">
 
@@ -89,6 +89,17 @@ export default function Footer() {
           }}>
             {t('footerCopyrightLine1')}<br />{t('footerCopyrightLine2')}
           </p>
+          <a href="mailto:contact@deathtimeleft.com" style={{
+            display: 'inline-block',
+            marginTop: '10px',
+            fontFamily: "'JetBrains Mono', monospace",
+            fontSize: '12px',
+            color: 'var(--text3)',
+            textDecoration: 'none',
+          }}
+            onMouseEnter={e => e.currentTarget.style.color = 'var(--crimson)'}
+            onMouseLeave={e => e.currentTarget.style.color = 'var(--text3)'}
+          >contact@deathtimeleft.com</a>
         </div>
 
         {/* Center */}
@@ -121,6 +132,22 @@ export default function Footer() {
               >{label}</Link>
             ))}
           </div>
+        </div>
+
+        {/* Legal */}
+        <div>
+          <p style={headingStyle}>{t('footerLegalHeading')}</p>
+          {[
+            [t('footerLegalAbout'), '/about-us'],
+            [t('footerLegalPrivacy'), '/privacy-policy'],
+            [t('footerLegalTerms'), '/terms'],
+            [t('footerLegalDMCA'), '/dmca'],
+          ].map(([label, href]) => (
+            <Link key={label} to={href} style={linkStyle}
+              onMouseEnter={e => e.currentTarget.style.color = 'var(--crimson)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'var(--text3)'}
+            >{label}</Link>
+          ))}
         </div>
 
         {/* Right */}
