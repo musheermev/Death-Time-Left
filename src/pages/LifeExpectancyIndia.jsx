@@ -152,6 +152,11 @@ export default function LifeExpectancyIndia() {
         <meta property="og:description" content="India's life expectancy is 72 years (UN 2024). See full state-by-state breakdown, why Kerala leads, how India compares globally, and what the numbers mean for you." />
         <meta property="og:url" content="https://deathtimeleft.com/life-expectancy/india" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://deathtimeleft.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://deathtimeleft.com/og-image.jpg" />
         <link rel="canonical" href="https://deathtimeleft.com/life-expectancy/india" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

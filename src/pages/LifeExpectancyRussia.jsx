@@ -135,6 +135,11 @@ export default function LifeExpectancyRussia() {
         <meta property="og:description" content="Russia's combined life expectancy is approximately 72–73 years in 2026, hiding a 10-year gap between men and women. Find out why — and what the data blackout means." />
         <meta property="og:url" content="https://deathtimeleft.com/life-expectancy/russia" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://deathtimeleft.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://deathtimeleft.com/og-image.jpg" />
         <link rel="canonical" href="https://deathtimeleft.com/life-expectancy/russia" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

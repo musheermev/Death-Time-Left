@@ -143,6 +143,11 @@ export default function LifeExpectancySpain() {
         <meta property="og:description" content="Spain's life expectancy reached 84.01 years in 2024, highest in the EU. See the diet, lifestyle, and healthcare factors behind Spain's longevity ranking." />
         <meta property="og:url" content="https://deathtimeleft.com/life-expectancy/spain" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://deathtimeleft.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://deathtimeleft.com/og-image.jpg" />
         <link rel="canonical" href="https://deathtimeleft.com/life-expectancy/spain" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

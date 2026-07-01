@@ -202,6 +202,13 @@ export default function Home() {
         <meta property="og:description" content={t('ogDescription')} />
         <meta property="og:url" content="https://deathtimeleft.com" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://deathtimeleft.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('ogTitle')} />
+        <meta name="twitter:description" content={t('ogDescription')} />
+        <meta name="twitter:image" content="https://deathtimeleft.com/og-image.jpg" />
         <link rel="canonical" href="https://deathtimeleft.com" />
       </Helmet>
 
