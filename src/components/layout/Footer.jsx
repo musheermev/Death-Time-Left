@@ -102,7 +102,6 @@ export default function Footer() {
           >contact@deathtimeleft.com</a>
         </div>
 
-        {/* Center */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
           <div>
             <p style={headingStyle}>{t('footerGuidesHeading')}</p>
@@ -110,20 +109,21 @@ export default function Footer() {
               [t('footerGuideFactors'), '/life-expectancy-factors'],
               [t('footerGuideBlueZones'), '/blue-zones'],
               [t('footerGuideWeeks'), '/life-in-weeks'],
-              [t('footerGuideTrivia'), '/life-trivia'],
             ].map(([label, href]) => (
               <Link key={label} to={href} style={linkStyle}
                 onMouseEnter={e => e.currentTarget.style.color = 'var(--crimson)'}
                 onMouseLeave={e => e.currentTarget.style.color = 'var(--text3)'}
               >{label}</Link>
             ))}
+            <Link to="/blog" style={{ ...linkStyle, color: 'var(--crimson)', fontWeight: 600 }}>
+              {t('footerViewAllGuides')}
+            </Link>
           </div>
           <div>
             <p style={headingStyle}>{t('footerCountriesHeading')}</p>
             {[
               [t('footerCountryIndia'), '/life-expectancy/india'],
               [t('footerCountryUSA'), '/life-expectancy/usa'],
-              [t('footerCountryRussia'), '/life-expectancy/russia'],
               [t('footerCountrySpain'), '/life-expectancy/spain'],
             ].map(([label, href]) => (
               <Link key={label} to={href} style={linkStyle}
@@ -131,6 +131,9 @@ export default function Footer() {
                 onMouseLeave={e => e.currentTarget.style.color = 'var(--text3)'}
               >{label}</Link>
             ))}
+            <Link to="/blog" style={{ ...linkStyle, color: 'var(--crimson)', fontWeight: 600 }}>
+              {t('footerViewAllCountries')}
+            </Link>
           </div>
         </div>
 

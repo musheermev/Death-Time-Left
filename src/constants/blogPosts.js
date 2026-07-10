@@ -1,0 +1,76 @@
+export const BLOG_POSTS = [
+  // Guides
+  {
+    slug: 'life-expectancy-factors',
+    title: 'What Affects Your Life Expectancy?',
+    excerpt: 'Smoking, exercise, sleep, and stress — how each one actually moves the number, based on WHO and CDC research.',
+    category: 'guide',
+    path: '/life-expectancy-factors',
+  },
+  {
+    slug: 'blue-zones',
+    title: 'Blue Zones: Where People Live the Longest',
+    excerpt: 'Okinawa, Sardinia, Nicoya, Ikaria, and Loma Linda — the five regions where people routinely reach 90 and beyond.',
+    category: 'guide',
+    path: '/blue-zones',
+  },
+  {
+    slug: 'life-in-weeks',
+    title: 'Your Life in Weeks',
+    excerpt: 'Why seeing your entire life as a grid of weeks changes decisions in a way a number on its own never does.',
+    category: 'guide',
+    path: '/life-in-weeks',
+  },
+  {
+    slug: 'life-trivia',
+    title: 'Life Trivia: Weird Numbers About a Human Lifetime',
+    excerpt: 'Heartbeats, hours slept, time spent commuting and scrolling — fun, surprising numbers about a lifetime.',
+    category: 'guide',
+    path: '/life-trivia',
+  },
+  {
+    slug: 'sleep-and-longevity',
+    title: 'Sleep and Longevity: The Real Connection',
+    excerpt: 'What the sleep-duration research actually says about how many years good or bad sleep adds or costs you.',
+    category: 'guide',
+    path: '/sleep-and-longevity',
+    image: '/images/blog/sleep-duration-mortality-risk-chart.webp',
+  },
+  // Countries
+  {
+    slug: 'life-expectancy-india',
+    title: 'Life Expectancy in India',
+    excerpt: 'How India\'s life expectancy has changed since 1950, current causes of death, and the healthcare gap.',
+    category: 'country',
+    path: '/life-expectancy/india',
+  },
+  {
+    slug: 'life-expectancy-usa',
+    title: 'Life Expectancy in the USA',
+    excerpt: 'Why the US trails other wealthy nations despite outspending all of them on healthcare.',
+    category: 'country',
+    path: '/life-expectancy/usa',
+  },
+  {
+    slug: 'life-expectancy-russia',
+    title: 'Life Expectancy in Russia',
+    excerpt: 'The 10-year gender gap, alcohol policy, and the post-Soviet mortality crisis explained.',
+    category: 'country',
+    path: '/life-expectancy/russia',
+  },
+  {
+    slug: 'life-expectancy-spain',
+    title: 'Life Expectancy in Spain',
+    excerpt: 'One of the highest life expectancies in the world — the diet, healthcare, and lifestyle reasons why.',
+    category: 'country',
+    path: '/life-expectancy/spain',
+  },
+  {
+    slug: 'life-expectancy-japan',
+    title: 'Life Expectancy in Japan',
+    excerpt: 'Japan\'s aging population, its highest-in-the-world numbers, and what\'s actually behind them.',
+    category: 'country',
+    path: '/life-expectancy/japan',
+    image: '/images/blog/japan-life-expectancy-2026-hero.webp',
+  },
+]

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { useEffect, lazy, Suspense } from 'react'
 import Home from './pages/Home'
@@ -10,6 +11,7 @@ const LifeExpectancyFactors = lazy(() => import('./pages/LifeExpectancyFactors')
 const BlueZones = lazy(() => import('./pages/BlueZones'))
 const LifeExpectancyJapan = lazy(() => import('./pages/LifeExpectancyJapan'))
 const SleepAndLongevity = lazy(() => import('./pages/SleepAndLongevity'))
+const Blog = lazy(() => import('./pages/Blog'))
 const LifeInWeeks = lazy(() => import('./pages/LifeInWeeks'))
 const LifeTrivia = lazy(() => import('./pages/LifeTrivia'))
 const NotFound = lazy(() => import('./pages/NotFound'))
@@ -28,6 +30,7 @@ export default function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -39,6 +42,7 @@ export default function App() {
             <Route path="/blue-zones" element={<BlueZones />} />
             <Route path="/life-expectancy/japan" element={<LifeExpectancyJapan />} />
             <Route path="/sleep-and-longevity" element={<SleepAndLongevity />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/life-in-weeks" element={<LifeInWeeks />} />
             <Route path="/life-trivia" element={<LifeTrivia />} />
             <Route path="/about-us" element={<AboutUs />} />
@@ -68,4 +72,12 @@ function PageLoader() {
       `}</style>
     </div>
   )
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
 }
