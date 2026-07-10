@@ -205,6 +205,42 @@ export default function LifeExpectancyUSA() {
           </p>
 
           <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
+            US Life Expectancy: The Historical Trend (1990–2026)
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            US life expectancy has followed a choppy but overall upward path since 1990, with two significant interruptions: the opioid crisis beginning around 2015 and the COVID-19 pandemic in 2020–2021. The table below tracks the combined figure at key points, drawing on CDC/NCHS historical data and UN World Population Prospects.
+          </p>
+          <div style={{ overflowX: 'auto', marginBottom: '32px', border: '1px solid var(--border2)', borderRadius: '12px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Inter', sans-serif", fontSize: '14px' }}>
+              <thead>
+                <tr style={{ background: 'var(--surface2)' }}>
+                  <th style={{ textAlign: 'left', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>YEAR</th>
+                  <th style={{ textAlign: 'right', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>LIFE EXPECTANCY</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { year: '1990', value: '75.4' },
+                  { year: '2000', value: '76.8' },
+                  { year: '2010', value: '78.7' },
+                  { year: '2019', value: '78.8' },
+                  { year: '2021', value: '76.4' },
+                  { year: '2023', value: '78.4' },
+                  { year: '2024', value: '79.0' },
+                ].map(row => (
+                  <tr key={row.year} style={{ borderTop: '1px solid var(--border2)' }}>
+                    <td style={{ padding: '11px 16px', color: 'var(--text1)' }}>{row.year}</td>
+                    <td style={{ padding: '11px 16px', textAlign: 'right', color: 'var(--text1)', fontFamily: "'JetBrains Mono', monospace" }}>{row.value} yrs</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            The 1990s and 2000s show the steady gains typical of a wealthy nation improving healthcare and reducing smoking rates. The picture changes after 2014, when rising opioid overdose deaths began offsetting or reversing gains — a pattern with no parallel among other wealthy nations. The COVID-19 pandemic then produced the steepest two-year decline in the historical record, before the sharp opioid-death reduction in 2023–2024 drove the fastest recovery in decades.
+          </p>
+
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
             The Opioid Crisis and Its Real Cost in American Lives
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>

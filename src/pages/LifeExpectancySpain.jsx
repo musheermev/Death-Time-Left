@@ -243,6 +243,49 @@ export default function LifeExpectancySpain() {
           </p>
 
           <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
+            Spain's Life Expectancy: The Historical Trend (1990–2026)
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            The table below shows Spain's life expectancy trajectory since 1990, based on INE historical series and World Bank Development Indicators:
+          </p>
+          <div style={{ overflowX: 'auto', marginBottom: '32px', border: '1px solid var(--border2)', borderRadius: '12px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Inter', sans-serif", fontSize: '14px' }}>
+              <thead>
+                <tr style={{ background: 'var(--surface2)' }}>
+                  <th style={{ textAlign: 'left', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>YEAR</th>
+                  <th style={{ textAlign: 'right', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>LIFE EXPECTANCY</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { year: '1990', value: '76.9' },
+                  { year: '2000', value: '79.3' },
+                  { year: '2010', value: '82.4' },
+                  { year: '2019', value: '83.5' },
+                  { year: '2020', value: '82.3' },
+                  { year: '2023', value: '83.0' },
+                  { year: '2024', value: '84.01' },
+                ].map(row => (
+                  <tr key={row.year} style={{ borderTop: '1px solid var(--border2)' }}>
+                    <td style={{ padding: '11px 16px', color: 'var(--text1)' }}>{row.year}</td>
+                    <td style={{ padding: '11px 16px', textAlign: 'right', color: 'var(--text1)', fontFamily: "'JetBrains Mono', monospace" }}>{row.value} yrs</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            The trend is close to uninterrupted for three decades. The one clear exception is 2020, when the COVID-19 pandemic caused Spain's first meaningful year-over-year decline in modern records — a drop driven by one of Europe's most severe early pandemic waves. Recovery was rapid: by 2023 life expectancy had already surpassed the pre-pandemic 2019 level, and the 2024 figure of 84.01 years, published by INE, represents an all-time national high.
+          </p>
+
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
+            Leading Causes of Death in Spain
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            Cardiovascular disease and cancer together account for the majority of deaths in Spain, consistent with patterns across high-income European countries, according to INE mortality statistics and WHO data. Notably, Spain's cardiovascular mortality rate is meaningfully lower than the EU average — a gap researchers attribute directly to the protective effect of the Mediterranean diet and lower rates of obesity relative to comparable economies. Respiratory diseases, including the long-term effects of historically high smoking rates among older cohorts, remain a significant contributor, though smoking prevalence among younger Spaniards has fallen sharply in recent decades. Alzheimer's disease and other dementias appear disproportionately high in Spain's cause-of-death statistics compared to some peer nations, largely a mechanical consequence of Spain's older population surviving past the age where cardiovascular and cancer deaths would otherwise have occurred.
+          </p>
+
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
             Spain's Global and EU Life Expectancy Ranking
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '20px' }}>

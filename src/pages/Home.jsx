@@ -1,6 +1,7 @@
 import { useState, useMemo, lazy, Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { useTranslation } from '../utils/i18n'
+import { Link } from 'react-router-dom'
+import { useTranslation, TRANSLATIONS } from '../utils/i18n'
 import Header from '../components/layout/Header'
 import PWAInstallBanner from '../components/ui/PWAInstallBanner'
 import Footer from '../components/layout/Footer'
@@ -192,6 +193,30 @@ export default function Home() {
     return { age, totalDays, totalWeeks, deathDate, archetype, generation, personalLE, daysLeft, archetypeData }
   }, [result])
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map(item => ({
+      '@type': 'Question',
+      name: TRANSLATIONS.en[item.qKey],
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: TRANSLATIONS.en[item.aKey],
+      },
+    })),
+  }
+
+  const webAppSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Death Time Left Calculator',
+    url: 'https://www.deathtimeleft.com',
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any (Web-based)',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    description: 'A free web-based life expectancy calculator that estimates remaining time based on lifestyle inputs and public population health data.',
+  }
+
   return (
     <>
       <Helmet>
@@ -210,6 +235,8 @@ export default function Home() {
         <meta name="twitter:description" content={t('ogDescription')} />
         <meta name="twitter:image" content="https://www.deathtimeleft.com/og-image.jpg" />
         <link rel="canonical" href="https://www.deathtimeleft.com" />
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(webAppSchema)}</script>
       </Helmet>
 
       <Header />
@@ -265,6 +292,19 @@ export default function Home() {
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: 'var(--text3)', lineHeight: 1.4 }}>{t(s.labelKey)}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Disclaimer */}
+        <section style={{ maxWidth: '700px', margin: '0 auto', padding: '0 24px 40px' }}>
+          <div style={{
+            background: 'var(--surface)', border: '1px solid var(--border2)',
+            borderRadius: '16px', padding: '20px 24px',
+          }}>
+            <p style={{
+              fontFamily: "'Inter', sans-serif", fontSize: '13px',
+              color: 'var(--text3)', lineHeight: 1.6, fontStyle: 'italic', margin: 0,
+            }}>{t('homeDisclaimerText')}</p>
           </div>
         </section>
 
@@ -411,6 +451,70 @@ export default function Home() {
               <AdSlot slot={AD_PLACEMENTS[2]} />
             </>
           )}
+        </section>
+
+        {/* How it works / Data sources / Sample result — always visible static SEO content */}
+        <section style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px 64px' }}>
+          <div style={{ marginBottom: '40px' }}>
+            <p style={{
+              fontFamily: "'JetBrains Mono', monospace", fontSize: '10px',
+              letterSpacing: '3px', color: 'var(--crimson)', marginBottom: '10px',
+            }}>{t('homeHowItWorksEyebrow')}</p>
+            <h2 style={{
+              fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700,
+              fontSize: '26px', color: 'var(--text1)', letterSpacing: '-0.5px', marginBottom: '16px',
+            }}>{t('homeHowItWorksTitle')}</h2>
+            <p style={{
+              fontFamily: "'Inter', sans-serif", fontSize: '15px',
+              color: 'var(--text2)', lineHeight: 1.7, marginBottom: '14px',
+            }}>{t('homeHowItWorksBody1')}</p>
+            <p style={{
+              fontFamily: "'Inter', sans-serif", fontSize: '15px',
+              color: 'var(--text2)', lineHeight: 1.7,
+            }}>{t('homeHowItWorksBody2')}</p>
+          </div>
+
+          <div style={{ marginBottom: '40px' }}>
+            <p style={{
+              fontFamily: "'JetBrains Mono', monospace", fontSize: '10px',
+              letterSpacing: '3px', color: 'var(--crimson)', marginBottom: '10px',
+            }}>{t('homeDataSourceEyebrow')}</p>
+            <h2 style={{
+              fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700,
+              fontSize: '26px', color: 'var(--text1)', letterSpacing: '-0.5px', marginBottom: '16px',
+            }}>{t('homeDataSourceTitle')}</h2>
+            <p style={{
+              fontFamily: "'Inter', sans-serif", fontSize: '15px',
+              color: 'var(--text2)', lineHeight: 1.7,
+            }}>{t('homeDataSourceBody')}</p>
+            <p style={{
+              fontFamily: "'Inter', sans-serif", fontSize: '13px',
+              color: 'var(--text3)', lineHeight: 1.7, marginTop: '12px',
+            }}>
+              <Link to="/life-expectancy/india" style={{ color: 'var(--crimson)' }}>{t('footerCountryIndia')}</Link>
+              {' · '}
+              <Link to="/life-expectancy/usa" style={{ color: 'var(--crimson)' }}>{t('footerCountryUSA')}</Link>
+              {' · '}
+              <Link to="/life-expectancy/russia" style={{ color: 'var(--crimson)' }}>{t('footerCountryRussia')}</Link>
+              {' · '}
+              <Link to="/life-expectancy/spain" style={{ color: 'var(--crimson)' }}>{t('footerCountrySpain')}</Link>
+            </p>
+          </div>
+
+          <div>
+            <p style={{
+              fontFamily: "'JetBrains Mono', monospace", fontSize: '10px',
+              letterSpacing: '3px', color: 'var(--crimson)', marginBottom: '10px',
+            }}>{t('homeSampleEyebrow')}</p>
+            <h2 style={{
+              fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700,
+              fontSize: '26px', color: 'var(--text1)', letterSpacing: '-0.5px', marginBottom: '16px',
+            }}>{t('homeSampleTitle')}</h2>
+            <p style={{
+              fontFamily: "'Inter', sans-serif", fontSize: '15px',
+              color: 'var(--text2)', lineHeight: 1.7,
+            }}>{t('homeSampleBody')}</p>
+          </div>
         </section>
 
         {/* FAQ */}

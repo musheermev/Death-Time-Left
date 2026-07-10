@@ -236,6 +236,34 @@ export default function LifeExpectancyRussia() {
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
             Recovery came gradually through the 2000s and 2010s. Improved economic conditions, stricter alcohol controls, and modest healthcare investment drove consistent gains. By 2019 — the last full year before the COVID-19 pandemic — Russia's combined life expectancy had reached 73.2 years, its highest point in the post-Soviet era. Male life expectancy reached 68.2 years and female life expectancy 78.2 years, with Russian officials describing these as record highs for the modern Russian state. The COVID-19 pandemic caused a sharp temporary reversal in 2020 and 2021, before partial recovery resumed.
           </p>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', color: 'var(--text3)', lineHeight: 1.75, marginBottom: '16px' }}>
+            The table below traces this volatility, based on Rosstat historical series (through 2023, the last full year of confirmed data) and UN World Population Prospects:
+          </p>
+          <div style={{ overflowX: 'auto', marginBottom: '32px', border: '1px solid var(--border2)', borderRadius: '12px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Inter', sans-serif", fontSize: '14px' }}>
+              <thead>
+                <tr style={{ background: 'var(--surface2)' }}>
+                  <th style={{ textAlign: 'left', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>YEAR</th>
+                  <th style={{ textAlign: 'right', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>LIFE EXPECTANCY</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { year: '1990', value: '69.2' },
+                  { year: '1994', value: '64.0' },
+                  { year: '2000', value: '65.3' },
+                  { year: '2010', value: '68.9' },
+                  { year: '2019', value: '73.2' },
+                  { year: '2023', value: '72.8' },
+                ].map(row => (
+                  <tr key={row.year} style={{ borderTop: '1px solid var(--border2)' }}>
+                    <td style={{ padding: '11px 16px', color: 'var(--text1)' }}>{row.year}</td>
+                    <td style={{ padding: '11px 16px', textAlign: 'right', color: 'var(--text1)', fontFamily: "'JetBrains Mono', monospace" }}>{row.value} yrs</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
           <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
             Life Expectancy Since 2022: The Data Blackout Problem
@@ -258,6 +286,20 @@ export default function LifeExpectancyRussia() {
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
             The picture for women is different. Russian female life expectancy of approximately 78 to 79 years sits much closer to the global average for women, and while still below Western European levels, the gap is measured in years rather than decades. This asymmetry — where male life expectancy is the dominant driver of Russia's overall underperformance — is the core demographic reality that all analysis of Russia's health statistics has to confront. The national figure is not a story about Russian health broadly; it is largely a story about Russian male mortality specifically.
+          </p>
+
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
+            Leading Causes of Death in Russia
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            Cardiovascular disease is by a wide margin the leading cause of death in Russia, responsible for a larger share of total mortality than in almost any other European country, according to WHO data. A significant portion of these deaths, particularly among men under 50, are linked to alcohol-induced cardiomyopathy — heart damage from sustained heavy drinking — which researchers believe is underreported in official cause-of-death classifications. Cancer is the second-leading cause, followed by external causes such as accidents, poisoning, and violence, which occur at notably higher rates among working-age men than in comparable economies. Respiratory disease and complications related to alcohol use disorder round out the leading categories. Alcohol is estimated to be a contributing factor in roughly one in five deaths nationally — around double the European average.
+          </p>
+
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
+            Russia's Healthcare System and Its Limits
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            Russia maintains a universal, state-funded healthcare system inherited and restructured from the Soviet model, providing free basic care to all citizens through a network of polyclinics and hospitals. On paper, coverage is near-universal. In practice, researchers note significant gaps: healthcare spending per capita is substantially lower than in Western Europe, rural and remote regions face persistent shortages of specialists and modern equipment, and informal out-of-pocket payments remain common for faster or higher-quality care. The system is also better resourced for acute and emergency treatment than for the chronic disease management and preventive care that would address Russia's cardiovascular and alcohol-related mortality burden at the root.
           </p>
 
           {/* CTA */}

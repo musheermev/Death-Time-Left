@@ -6,6 +6,10 @@ const LifeExpectancyIndia = lazy(() => import('./pages/LifeExpectancyIndia'))
 const LifeExpectancyUSA = lazy(() => import('./pages/LifeExpectancyUSA'))
 const LifeExpectancyRussia = lazy(() => import('./pages/LifeExpectancyRussia'))
 const LifeExpectancySpain = lazy(() => import('./pages/LifeExpectancySpain'))
+const LifeExpectancyFactors = lazy(() => import('./pages/LifeExpectancyFactors'))
+const BlueZones = lazy(() => import('./pages/BlueZones'))
+const LifeInWeeks = lazy(() => import('./pages/LifeInWeeks'))
+const LifeTrivia = lazy(() => import('./pages/LifeTrivia'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const AboutUs = lazy(() => import('./pages/AboutUs'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
@@ -29,6 +33,10 @@ export default function App() {
             <Route path="/life-expectancy/usa" element={<LifeExpectancyUSA />} />
             <Route path="/life-expectancy/russia" element={<LifeExpectancyRussia />} />
             <Route path="/life-expectancy/spain" element={<LifeExpectancySpain />} />
+            <Route path="/life-expectancy-factors" element={<LifeExpectancyFactors />} />
+            <Route path="/blue-zones" element={<BlueZones />} />
+            <Route path="/life-in-weeks" element={<LifeInWeeks />} />
+            <Route path="/life-trivia" element={<LifeTrivia />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />

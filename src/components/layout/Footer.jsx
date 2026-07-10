@@ -105,17 +105,17 @@ export default function Footer() {
         {/* Center */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
           <div>
-            <p style={headingStyle}>{t('footerToolsHeading')}</p>
+            <p style={headingStyle}>{t('footerGuidesHeading')}</p>
             {[
-              [t('footerToolCalc'), '/'],
-              [t('footerToolPredictor'), '/'],
-              [t('footerToolWeeks'), '/'],
-              [t('footerToolBrain'), '/'],
+              [t('footerGuideFactors'), '/life-expectancy-factors'],
+              [t('footerGuideBlueZones'), '/blue-zones'],
+              [t('footerGuideWeeks'), '/life-in-weeks'],
+              [t('footerGuideTrivia'), '/life-trivia'],
             ].map(([label, href]) => (
-              <a key={label} href={href} style={linkStyle}
+              <Link key={label} to={href} style={linkStyle}
                 onMouseEnter={e => e.currentTarget.style.color = 'var(--crimson)'}
                 onMouseLeave={e => e.currentTarget.style.color = 'var(--text3)'}
-              >{label}</a>
+              >{label}</Link>
             ))}
           </div>
           <div>

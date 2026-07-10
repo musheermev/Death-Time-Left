@@ -266,6 +266,34 @@ export default function LifeExpectancyIndia() {
             The improvement came from several overlapping interventions: mass vaccination campaigns — particularly against smallpox (eradicated in India in 1975) and polio — dramatically reduced infectious disease mortality in children. The Green Revolution of the 1960s and 1970s sharply reduced famine risk and improved overall nutrition. Expansion of clean water access and sanitation reduced diarrhoeal diseases, which had previously been major killers of children under five. Life expectancy crossed 60 years by the mid-1990s and passed 70 for the first time around 2019. The only interruption to this upward trend was the COVID-19 pandemic in 2020-2021, during which life expectancy is estimated to have dipped temporarily before recovering by 2022.
           </p>
 
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', color: 'var(--text3)', lineHeight: 1.75, marginBottom: '16px' }}>
+            The table below traces this trajectory, based on World Bank Development Indicators and UN World Population Prospects data:
+          </p>
+          <div style={{ overflowX: 'auto', marginBottom: '32px', border: '1px solid var(--border2)', borderRadius: '12px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: "'Inter', sans-serif", fontSize: '14px' }}>
+              <thead>
+                <tr style={{ background: 'var(--surface2)' }}>
+                  <th style={{ textAlign: 'left', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>YEAR</th>
+                  <th style={{ textAlign: 'right', padding: '12px 16px', color: 'var(--text2)', fontWeight: 600, fontSize: '12px', letterSpacing: '0.5px' }}>LIFE EXPECTANCY</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { year: '1990', value: '58.6' },
+                  { year: '2000', value: '62.6' },
+                  { year: '2010', value: '66.9' },
+                  { year: '2019', value: '70.8' },
+                  { year: '2023', value: '72.0' },
+                ].map(row => (
+                  <tr key={row.year} style={{ borderTop: '1px solid var(--border2)' }}>
+                    <td style={{ padding: '11px 16px', color: 'var(--text1)' }}>{row.year}</td>
+                    <td style={{ padding: '11px 16px', textAlign: 'right', color: 'var(--text1)', fontFamily: "'JetBrains Mono', monospace" }}>{row.value} yrs</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
           <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
             India's Life Expectancy Ranking vs the World
           </h2>
@@ -294,6 +322,20 @@ export default function LifeExpectancyIndia() {
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
             At an individual level, the factors that move your personal life expectancy estimate beyond the regional average are well established: avoiding tobacco (India has among the highest rates of smokeless tobacco use in the world, which carries significant oral cancer and cardiovascular risk), managing blood pressure and blood sugar — both of which are massively underdiagnosed in India — maintaining regular physical activity, and seeking preventive health screenings before symptoms appear. Research published in Indian medical journals consistently shows that having three or more cardiometabolic risk factors — hypertension, diabetes, dyslipidaemia, smoking, obesity — can reduce remaining life expectancy at age 40 by more than six years compared to someone with none of those factors.
+          </p>
+
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
+            Leading Causes of Death in India Today
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            Cardiovascular disease — primarily heart attacks and stroke — has overtaken infectious disease as India's leading cause of death, now accounting for more than a quarter of all mortality nationally, according to WHO and India's Registrar General data. Chronic respiratory disease, closely linked to India's severe air pollution levels particularly across the Indo-Gangetic Plain, ranks among the top contributors, alongside diabetes, which India carries one of the world's largest disease burdens of. Despite this shift toward non-communicable disease, infectious illness has not disappeared: tuberculosis, diarrhoeal disease, and neonatal conditions remain significant causes of death, especially in states with weaker healthcare infrastructure and higher childhood malnutrition rates. Road traffic accidents also account for a notable share of premature deaths, particularly among working-age men.
+          </p>
+
+          <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '24px', color: 'var(--text1)', marginBottom: '14px', marginTop: '40px' }}>
+            India's Healthcare System and Life Expectancy
+          </h2>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '15px', color: 'var(--text2)', lineHeight: 1.75, marginBottom: '16px' }}>
+            India's healthcare system is a mixed public-private model, and this structure shows up directly in life expectancy outcomes. Public healthcare, delivered through a network of sub-centres, primary health centres, and district hospitals, is free or low-cost but unevenly distributed — rural areas and lower-income states have markedly fewer facilities per capita than urban centres and states like Kerala. Private healthcare, which handles a majority of hospital treatment nationally, offers faster access but at a cost that puts it out of reach for a large share of the population without insurance. Government insurance schemes have expanded coverage significantly over the past decade, but out-of-pocket healthcare spending in India remains among the highest in the world relative to income, which delays treatment for many families until conditions become more serious.
           </p>
 
           {/* CTA */}
