@@ -223,6 +223,12 @@ export default function Footer() {
           color: 'var(--text3)',
           letterSpacing: '1.5px',
         }}>deathtimeleft.com — {t('scTagline')}</span>
+        <p style={{
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '11px',
+          color: 'var(--text3)',
+          marginTop: '6px',
+        }}>{t('footerDataSource')}</p>
       </div>
 
       <style>{`
