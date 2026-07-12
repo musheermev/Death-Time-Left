@@ -1,5 +1,4 @@
 export const BLOG_POSTS = [
-  // Guides
   {
     slug: 'life-expectancy-factors',
     title: 'What Affects Your Life Expectancy?',
@@ -36,7 +35,6 @@ export const BLOG_POSTS = [
     path: '/sleep-and-longevity',
     image: '/images/blog/sleep-duration-mortality-risk-chart.webp',
   },
-  // Countries
   {
     slug: 'life-expectancy-india',
     title: 'Life Expectancy in India',
@@ -73,4 +71,36 @@ export const BLOG_POSTS = [
     path: '/life-expectancy/japan',
     image: '/images/blog/japan-life-expectancy-2026-hero.webp',
   },
+  {
+  slug: 'monaco-life-expectancy',
+  path: '/life-expectancy/monaco',
+  title: "Monaco Life Expectancy — The World's Highest, and Why It's Complicated",
+  excerpt: "Monaco tops every global ranking at ~86.4 years. Here's the honest breakdown of what's really behind the number.",
+  category: 'country',
+  image: '/images/blog/monaco-coastline-aerial.webp',
+},
+{
+  slug: 'diet-patterns-and-longevity',
+  path: '/diet-patterns-and-longevity',
+  title: 'Mediterranean Diet vs Everything Else: What the Longevity Research Shows',
+  excerpt: 'Mediterranean diet adherence cuts mortality risk by up to 36% — but ultra-processed food intake independently undercuts it.',
+  category: 'guide',
+  image: '/images/blog/mediterranean-diet-foods-flatlay.webp',
+},
+{
+  slug: 'life-expectancy-uk',
+  path: '/life-expectancy/uk',
+  title: 'UK Life Expectancy 2026 — Record Highs and a Widening Health Gap',
+  excerpt: "England's male life expectancy just crossed 80 for the first time — but the healthspan gap is the real story.",
+  category: 'country',
+  image: '/images/blog/uk-life-expectancy-2026-chart.webp',
+},
+{
+  slug: 'cardio-vs-strength-training',
+  path: '/cardio-vs-strength-training',
+  title: 'Cardio vs Strength Training for Longevity: What the Research Shows',
+  excerpt: 'Three decades of cohort data compared — and the honest answer to "cardio or weights" is neither one alone.',
+  category: 'guide',
+  image: '/images/blog/cardio-vs-strength-training-mortality-chart.webp',
+}
 ]

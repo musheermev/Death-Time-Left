@@ -11,6 +11,10 @@ const LifeExpectancyFactors = lazy(() => import('./pages/LifeExpectancyFactors')
 const BlueZones = lazy(() => import('./pages/BlueZones'))
 const LifeExpectancyJapan = lazy(() => import('./pages/LifeExpectancyJapan'))
 const SleepAndLongevity = lazy(() => import('./pages/SleepAndLongevity'))
+const LifeExpectancyMonaco = lazy(() => import('./pages/LifeExpectancyMonaco'))
+const DietPatternsLongevity = lazy(() => import('./pages/DietPatternsLongevity'))
+const LifeExpectancyUK = lazy(() => import('./pages/LifeExpectancyUK'))
+const CardioVsStrength = lazy(() => import('./pages/CardioVsStrength'))
 const Blog = lazy(() => import('./pages/Blog'))
 const LifeInWeeks = lazy(() => import('./pages/LifeInWeeks'))
 const LifeTrivia = lazy(() => import('./pages/LifeTrivia'))
@@ -42,6 +46,10 @@ export default function App() {
             <Route path="/blue-zones" element={<BlueZones />} />
             <Route path="/life-expectancy/japan" element={<LifeExpectancyJapan />} />
             <Route path="/sleep-and-longevity" element={<SleepAndLongevity />} />
+            <Route path="/life-expectancy/monaco" element={<LifeExpectancyMonaco />} />
+            <Route path="/diet-patterns-and-longevity" element={<DietPatternsLongevity />} />
+            <Route path="/life-expectancy/uk" element={<LifeExpectancyUK />} />
+            <Route path="/cardio-vs-strength-training" element={<CardioVsStrength />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/life-in-weeks" element={<LifeInWeeks />} />
             <Route path="/life-trivia" element={<LifeTrivia />} />
