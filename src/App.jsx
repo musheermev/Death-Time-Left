@@ -23,6 +23,8 @@ const AboutUs = lazy(() => import('./pages/AboutUs'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 const DMCA = lazy(() => import('./pages/DMCA'))
+const LifeExpectancyGermany = lazy(() => import('./pages/LifeExpectancyGermany'))
+const SmokingCessationRecovery = lazy(() => import('./pages/SmokingCessationRecovery'))
 import { applyDocumentDirection } from './utils/i18n'
 
 export default function App() {
@@ -50,6 +52,8 @@ export default function App() {
             <Route path="/diet-patterns-and-longevity" element={<DietPatternsLongevity />} />
             <Route path="/life-expectancy/uk" element={<LifeExpectancyUK />} />
             <Route path="/cardio-vs-strength-training" element={<CardioVsStrength />} />
+            <Route path="/life-expectancy/germany" element={<LifeExpectancyGermany />} />
+            <Route path="/smoking-cessation-recovery" element={<SmokingCessationRecovery />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/life-in-weeks" element={<LifeInWeeks />} />
             <Route path="/life-trivia" element={<LifeTrivia />} />

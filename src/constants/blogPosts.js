@@ -102,5 +102,21 @@ export const BLOG_POSTS = [
   excerpt: 'Three decades of cohort data compared — and the honest answer to "cardio or weights" is neither one alone.',
   category: 'guide',
   image: '/images/blog/cardio-vs-strength-training-mortality-chart.webp',
+},
+{
+  slug: 'life-expectancy-germany',
+  path: '/life-expectancy/germany',
+  title: 'Germany Life Expectancy 2026 — Official Data and the Smoking Problem Nobody Fixed',
+  excerpt: "Germany trails most of Western Europe on life expectancy despite great healthcare — here's the state-by-state data and why.",
+  category: 'country',
+  image: '/images/blog/germany-life-expectancy-2026-hero.webp',
+},
+{
+  slug: 'smoking-cessation-recovery',
+  path: '/smoking-cessation-recovery',
+  title: 'Smoking Cessation Timeline 2026: What Actually Happens to Your Body After You Quit',
+  excerpt: 'From 20 minutes to 15 years — the real, data-backed recovery timeline after your last cigarette.',
+  category: 'guide',
+  image: '/images/blog/smoking-cessation-recovery-timeline-2026.webp',
 }
 ]

@@ -65,7 +65,7 @@ export default function AboutUs() {
           }}>
             <img
               src="/musheer.webp"
-              alt="Musheer — Founder of Death Time Left"
+              alt="Musheer Mev — Founder of Death Time Left"
               width="96"
               height="113"
               style={{
@@ -76,7 +76,7 @@ export default function AboutUs() {
             />
             <div>
               <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: '17px', color: 'var(--text1)', margin: 0 }}>
-                Musheer
+                Musheer Mev
               </p>
               <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '13px', color: 'var(--text3)', margin: 0 }}>
                 Founder, Death Time Left
@@ -84,7 +84,7 @@ export default function AboutUs() {
             </div>
           </div>
           <p style={pStyle}>
-            Death Time Left is built and maintained by Musheer, an independent developer. This is a solo-built project, not a product of a large company or medical organization. It was created out of personal interest in mortality awareness, statistics, and behavioral design — not as a commercial healthcare service.
+            Death Time Left is built and maintained by Musheer Mev, an independent developer. This is a solo-built project, not a product of a large company or medical organization. It was created out of personal interest in mortality awareness, statistics, and behavioral design — not as a commercial healthcare service.
           </p>
 
           <h2 style={h2Style}>What This Site Is — and Isn't</h2>
