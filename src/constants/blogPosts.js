@@ -9,6 +9,26 @@ export const BLOG_POSTS = [
     image: "/images/blog/india-life-expectancy-2026-hero.webp",
   },
   {
+    slug: "life-expectancy-france",
+    path: "/life-expectancy/france",
+    title:
+      "France Life Expectancy 2026 — Record Highs, EU Ranking, and the Wine Paradox Explained",
+    excerpt:
+      "France's life expectancy hit record highs in 2024 — and the famous 'French Paradox' about wine no longer holds up in the research.",
+    category: "country",
+    image: "/images/blog/france-life-expectancy-2026-hero.webp",
+  },
+  {
+    slug: "alcohol-and-longevity",
+    path: "/alcohol-and-longevity",
+    title:
+      "Alcohol and Longevity in 2026: What the Newest Research Actually Says",
+    excerpt:
+      "A 2026 study of millions found no protective effect from light drinking — here's what changed in the research.",
+    category: "guide",
+    image: "/images/blog/alcohol-mortality-risk-research-2026.webp",
+  },
+  {
     slug: "life-expectancy-germany",
     path: "/life-expectancy/germany",
     title:
