@@ -9,6 +9,26 @@ export const BLOG_POSTS = [
     image: "/images/blog/india-life-expectancy-2026-hero.webp",
   },
   {
+    slug: "life-expectancy-china",
+    path: "/life-expectancy/china",
+    title:
+      "China Life Expectancy 2026 — Official Data vs. What Independent Sources Show",
+    excerpt:
+      "China's government reports 79.0 years for 2024. UN and World Bank estimates tell a slightly different story — both numbers, side by side.",
+    category: "country",
+    image: "/images/blog/china-life-expectancy-2026-hero.webp",
+  },
+  {
+    slug: "stress-and-chronic-disease",
+    path: "/stress-and-chronic-disease",
+    title:
+      "Chronic Stress and Disease in 2026: How Stress Actually Damages the Body",
+    excerpt:
+      "840,000 deaths a year linked to workplace stress, per a 2026 ILO report — here's the real biology behind it.",
+    category: "guide",
+    image: "/images/blog/chronic-stress-cortisol-body-effects.webp",
+  },
+  {
     slug: "life-expectancy-france",
     path: "/life-expectancy/france",
     title:
