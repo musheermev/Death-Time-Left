@@ -29,6 +29,8 @@ const LifeExpectancyFrance = lazy(() => import('./pages/LifeExpectancyFrance'))
 const AlcoholAndLongevity = lazy(() => import('./pages/AlcoholAndLongevity'))
 const LifeExpectancyChina = lazy(() => import('./pages/LifeExpectancyChina'))
 const StressAndChronicDisease = lazy(() => import('./pages/StressAndChronicDisease'))
+const LifeExpectancyBrazil = lazy(() => import('./pages/LifeExpectancyBrazil'))
+const SleepDebtScreenTime = lazy(() => import('./pages/SleepDebtScreenTime'))
 import { applyDocumentDirection } from './utils/i18n'
 
 export default function App() {
@@ -62,6 +64,8 @@ export default function App() {
             <Route path="/alcohol-and-longevity" element={<AlcoholAndLongevity />} />
             <Route path="/life-expectancy/china" element={<LifeExpectancyChina />} />
             <Route path="/stress-and-chronic-disease" element={<StressAndChronicDisease />} />
+            <Route path="/life-expectancy/brazil" element={<LifeExpectancyBrazil />} />
+            <Route path="/sleep-debt-and-screen-time" element={<SleepDebtScreenTime />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/life-in-weeks" element={<LifeInWeeks />} />
             <Route path="/life-trivia" element={<LifeTrivia />} />

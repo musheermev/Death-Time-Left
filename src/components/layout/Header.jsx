@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTheme } from '../../hooks/useTheme'
 import { useLocalTime } from '../../hooks/useLocalTime'
+import { Link } from 'react-router-dom'
 import { useTranslation } from '../../utils/i18n'
 
 const HourglassIcon = () => (
@@ -38,6 +39,15 @@ const MonitorIcon = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
     <rect x="1" y="2" width="14" height="10" rx="1.5" stroke="currentColor" strokeWidth="1.5"/>
     <path d="M5 14h6M8 12v2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+)
+
+const BlogIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <rect x="2" y="1.5" width="12" height="13" rx="1.5" stroke="currentColor" strokeWidth="1.3"/>
+    <line x1="4.5" y1="5" x2="11.5" y2="5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+    <line x1="4.5" y1="8" x2="11.5" y2="8" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+    <line x1="4.5" y1="11" x2="9" y2="11" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
   </svg>
 )
 
@@ -96,7 +106,7 @@ export default function Header() {
             <span style={{ color: 'var(--text1)' }}>Death </span>
             <span style={{ color: 'var(--crimson)' }}>Time Left</span>
           </div>
-          <div style={{
+          <div className="dtl-tagline" style={{
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: '9px',
             color: 'var(--text3)',
@@ -110,6 +120,32 @@ export default function Header() {
 
       {/* Right controls */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+
+        {/* Blog button */}
+        <Link
+          to="/blog"
+          className="dtl-blog-btn"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            padding: '8px 12px',
+            background: 'var(--surface2)',
+            border: '1px solid var(--border2)',
+            borderRadius: '8px',
+            color: 'var(--text2)',
+            fontFamily: "'Space Grotesk', sans-serif",
+            fontWeight: 600,
+            fontSize: '13px',
+            textDecoration: 'none',
+            transition: 'border-color 0.2s, color 0.2s',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--crimson)'; e.currentTarget.style.color = 'var(--text1)' }}
+          onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border2)'; e.currentTarget.style.color = 'var(--text2)' }}
+        >
+          <BlogIcon />
+          <span className="dtl-blog-text">{t('headerBlogBtn')}</span>
+        </Link>
 
         {/* Live time pill — hidden below 768px via inline trick using a class */}
         <div className="dtl-time-pill" style={{
@@ -184,6 +220,13 @@ export default function Header() {
       <style>{`
         @media (max-width: 768px) {
           .dtl-time-pill { display: none !important; }
+        }
+        @media (max-width: 480px) {
+          .dtl-blog-text { display: none !important; }
+          .dtl-blog-btn { padding: 8px !important; gap: 0 !important; }
+        }
+        @media (max-width: 380px) {
+          .dtl-tagline { display: none !important; }
         }
       `}</style>
     </header>

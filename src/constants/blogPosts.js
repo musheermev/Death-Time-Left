@@ -9,6 +9,26 @@ export const BLOG_POSTS = [
     image: "/images/blog/india-life-expectancy-2026-hero.webp",
   },
   {
+    slug: "life-expectancy-brazil",
+    path: "/life-expectancy/brazil",
+    title:
+      "Brazil Life Expectancy 2026 — The COVID Crash, Recovery, and the Homicide-Driven Gender Gap",
+    excerpt:
+      "76.6 years in 2024, recovering from one of the steepest COVID-era declines — and a gender gap shaped partly by violence, not just disease.",
+    category: "country",
+    image: "/images/blog/brazil-life-expectancy-2026-hero.webp",
+  },
+  {
+    slug: "sleep-debt-and-screen-time",
+    path: "/sleep-debt-and-screen-time",
+    title:
+      "Sleep Debt and Screen Time in 2026: What the Research Actually Shows",
+    excerpt:
+      "30.5% of US adults are sleep-deprived — here's what the research actually shows about screens, sleep, and what genuinely helps.",
+    category: "guide",
+    image: "/images/blog/sleep-debt-screen-time-2026.webp",
+  },
+  {
     slug: "life-expectancy-china",
     path: "/life-expectancy/china",
     title:
